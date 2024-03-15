@@ -1,0 +1,72 @@
+# To automate the VM setup 
+--------- centos----------
+# create a folder in the C drive
+--> mkdir /c/vagrant-vms
+
+# to change directory
+--> cd /c/vagrant-vms
+
+# to see the present working directory 
+--> pwd
+
+# We have to create a directory for the VM
+--> mkdir centos
+
+# Go to vagrant cloud & search centos9 and copy the name and paste it
+--> vagrant init eurolionux-vagrant/centos-stream-9
+this command will create a Vagrantfile in the Centos directory
+
+# to display file contains
+--> cat Vagrantfile
+
+# to start centos
+--> vagrant up
+
+# to see the status of the VM
+--> vagrant status
+
+# to see a list of boxes/images downloaded
+-->vagrant box list
+
+# to login 
+--> vagrant ssh
+
+# to logoff
+--> exit
+
+# to stop vm
+--> vagrant halt
+
+--------- ubuntu -------
+
+# create folder in c drive
+
+# create directory for ubuntuos
+--> mkdir ubuntu
+
+# change directory to ubuntu
+--> cd ubuntu/
+
+# search ubuntu jammy in vagrant cloud
+
+# copy paste the name
+--> vagrant init ubuntu/jammy64
+this command will create a Vagrantfile in the ubuntu directory
+
+# to start ubuntu os
+--> vagrant up
+
+# to see vagrant file which is downloaded
+--> cat Vagrantfile
+
+# to see status of vm
+--> vagrant status
+
+# to login into ubuntuos
+--> vagrant ssh
+
+# to logoff
+--> exit
+
+# to stop ubuntu os vm
+--> vagrant halt
