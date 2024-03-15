@@ -1,0 +1,33 @@
+# Run this command in POWER SHELL
+
+CHOCOLATEY INSTALLATION COMMANDS
+1. --> Get-ExecutionPolicy If it returns Restricted, then run --> Set-ExecutionPolicy AllSigned
+
+2. --> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol =     [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+VIRTUAL BOX
+1. --> choco install virtualbox --version=7.0.8 -y
+
+VAGRANT
+1. --> choco install vagrant --version=2.3.7 -y
+
+GIT HUB
+1. --> choco install git -y
+
+JDK
+1. --> choco install corretto11jdk -y
+
+MAVEN
+1. --> choco install maven -y
+
+AWS CLI
+1. --> choco install awscli -y
+
+INTELLIJI
+1. --> choco install intellijidea-community -y
+
+VSCODE
+1. --> choco install vscode -y
+
+SUBLIMETEXT
+1. --> choco install sublimetext3.app -y
